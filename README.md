@@ -35,13 +35,19 @@ public class HandleImpl implements WebTransportHandle {
 }
 
 
-//test
-main(){
-WebTransportEngine
+package com.example.demo;
+
+import top.redoriental.webtransport.WebTransportEngine;
+
+public class Test {
+    public static void main(String[] args) {
+        WebTransportEngine
                 .create()
                 .dllPath("E:\\demo\\src\\main\\resources\\tt.dll")
                 .pathHandle("/path", HandleImpl.class)
                 .setPort(10001)
                 .ssl("E:\\demo\\src\\main\\resources\\redoriental.top8.key","E:\\demo\\src\\main\\resources\\redoriental.top.crt")
                 .init();
-                }
+    }
+}
+
